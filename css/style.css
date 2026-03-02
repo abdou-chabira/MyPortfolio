@@ -2,9 +2,9 @@
 :root {
     --primary-bg: #F6F5F3;
     --primary-text: #084C61;
-    --accent-blue: #6EC1E4;
+    --accent-blue: linear-gradient(90deg, #6EC1E4 0%, #084C61 100%);
     --accent-coral: #FF6B6B;
-    --accent-green: #4ECDC4;
+    --accent-green: linear-gradient(90deg, #6EC1E4 0%, #084C61 100%);
     --header-bg: linear-gradient(90deg, #6EC1E4 0%, #084C61 100%);
     --footer-bg: linear-gradient(90deg, #6EC1E4 0%, #084C61 100%);
     --card-bg: #fff;
