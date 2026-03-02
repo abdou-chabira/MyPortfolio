@@ -4,21 +4,28 @@ body {
     margin: 0;
     padding: 0;
     transition: background 0.3s, color 0.3s;
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    color: #22223b;
 }
 
 body.light-mode {
-    background: #fff;
-    color: #333;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #22223b;
 }
 
 body.dark-mode {
-    background: #121212;
-    color: #ddd;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #f8ffae;
 }
 
 header {
     padding: 1.5rem 5%;
     text-align: center;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(67, 198, 172, 0.2);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 header nav {
@@ -29,7 +36,16 @@ header nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
-    color: inherit;
+    color: #f8ffae;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    color: #191654;
 }
 
 header nav button {
@@ -56,11 +72,17 @@ ul li {
 
 /* Project Cards */
 .project-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 24px rgba(67, 198, 172, 0.15);
     margin-bottom: 1.5rem;
     overflow: hidden;
     transition: all 0.3s;
+    background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+}
+
+body.dark-mode .project-card {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #f8ffae;
 }
 
 .project-header {
@@ -68,12 +90,13 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #f9f9f9;
-    cursor: pointer;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
 }
 
 body.dark-mode .project-header {
-    background: #1e1e1e;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #f8ffae;
 }
 
 .project-details {
@@ -94,9 +117,13 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    background: #f1f1f1;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 body.dark-mode footer {
-    background: #1e1e1e;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #f8ffae;
 }
