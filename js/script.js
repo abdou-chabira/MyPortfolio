@@ -17,6 +17,15 @@ document.querySelectorAll('.expand-btn').forEach(btn => {
     });
 });
 
+// Expand all project cards by default
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.classList.add('expanded');
+        const btn = card.querySelector('.expand-btn');
+        if (btn) btn.textContent = 'Details ▲';
+    });
+});
+
 // Dark/Light mode toggle
 const toggleBtn = document.getElementById('toggleTheme');
 toggleBtn.addEventListener('click', () => {
