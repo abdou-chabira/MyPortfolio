@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background: #fff;
+    color: #333;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #ddd;
+}
+
+header {
+    padding: 1.5rem 5%;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+header nav button {
+    margin-left: 1rem;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem 5%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.3rem;
+}
+
+/* Project Cards */
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+body.dark-mode .project-header {
+    background: #1e1e1e;
+}
+
+.project-details {
+    padding: 1rem;
+    display: none;
+}
+
+.project-details img {
+    max-width: 100%;
+    margin-top: 0.5rem;
+}
+
+.project-card.expanded .project-details {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #f1f1f1;
+}
+
+body.dark-mode footer {
+    background: #1e1e1e;
+}
