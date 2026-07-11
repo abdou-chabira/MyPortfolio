@@ -4,123 +4,568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahmane Chabira | Portfolio</title>
+    <title>Abderrahmane Chabira | Senior Backend Engineer</title>
+    <meta name="description"
+        content="Abderrahmane Chabira — Senior Backend Engineer with 5+ years building scalable Python, Django, and cloud-native APIs. Based in Augsburg, Germany, with full work authorization.">
+    <meta name="author" content="Abderrahmane Chabira">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abderrahmane Chabira | Senior Backend Engineer">
+    <meta property="og:description"
+        content="Senior Backend Engineer — Python, Django, FastAPI, PostgreSQL, Celery, AWS. Based in Germany.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="light-mode">
-    <header>
-        <div class="profile-picture-container">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-brand">AC<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#experience" data-i18n="nav.experience">Experience</a>
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#education" data-i18n="nav.education">Education</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <button id="toggleLang" class="lang-btn">🌐 Deutsch</button>
+                <button id="toggleTheme">🌙 Dark</button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
         </div>
-        <div class="header-top">
-            <h1>Abderrahmane Chabira</h1>
-            <p>Senior Backend Engineer | Django, Python, DevOps</p>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-intro">
+                <span class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Open to full-time roles
+                        in Germany</span></span>
+                <h1>Abderrahmane <span class="accent">Chabira</span></h1>
+                <p class="hero-role" data-i18n="hero.role">Senior Backend Engineer — Python · Django · Cloud</p>
+                <p class="hero-desc" data-i18n="hero.desc">I design and ship scalable backend systems, RESTful & GraphQL
+                    APIs, and cloud-native distributed services. 5+ years across international SaaS startups and
+                    enterprise environments, with a track record of measurable performance and reliability gains.</p>
+                <div class="hero-cta">
+                    <a href="assets/Abderrahmane_Chabira_CV.pdf" class="btn btn-primary" download
+                        data-i18n="hero.cv">⬇ Download CV</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Get in touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:a.chabira101@gmail.com" aria-label="Email" title="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/abdou-chabira" target="_blank" rel="noopener" aria-label="GitHub"
+                        title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.34 9.34 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chabira-abderrahmane/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="images/profile.jpg" alt="Abderrahmane Chabira">
+            </div>
         </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <button id="toggleTheme">🌙 Dark Mode</button>
-        </nav>
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p data-i18n="stat.years">Years of experience</p>
+                </div>
+                <div class="stat">
+                    <h3>50k+</h3>
+                    <p data-i18n="stat.calls">API calls/day handled</p>
+                </div>
+                <div class="stat">
+                    <h3>9×</h3>
+                    <p data-i18n="stat.query">Query performance gain</p>
+                </div>
+                <div class="stat">
+                    <h3>95%+</h3>
+                    <p data-i18n="stat.coverage">Test coverage</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- About Section -->
+    <!-- ================= ABOUT ================= -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Results-driven Backend Engineer with 5+ years of experience designing and building scalable web applications,
-            RESTful APIs, and cloud-based backend systems. Strong expertise in Python, Django, Flask, PostgreSQL,
-            Celery, and distributed systems, with hands-on experience delivering SaaS and fintech solutions for
-            international startups and enterprise environments. Proven track record in API integrations, automation,
-            asynchronous processing, and performance optimization. Experienced working in remote, cross-functional
-            teams, contributing to product strategy, mentoring developers, and delivering reliable, business-focused
-            software solutions. Currently based in Berlin and open to opportunities across Germany.</p>
-        <h3>Tech Stack & Specialties</h3>
-        <ul>
-            <li>Python, Django, Flask</li>
-            <li>PostgreSQL, MySQL, Redis</li>
-            <li>Docker, AWS, GitHub Actions, CI/CD</li>
-            <li>API Integration, Rate Limiting, Idempotency, Monitoring</li>
-        </ul>
+        <div class="container">
+            <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+            <h2 class="section-title" data-i18n="about.title">Backend engineering with measurable impact</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about.p1">I'm a Senior Backend Engineer with 5+ years designing and delivering scalable
+                        web applications, RESTful and GraphQL APIs, and cloud-native distributed systems. My core stack
+                        is Python, Django, Flask, FastAPI, PostgreSQL, Celery, Redis, and AWS.</p>
+                    <p data-i18n="about.p2">I've owned full API architecture, built CI/CD pipelines, mentored junior
+                        engineers, and consistently delivered measurable performance improvements — from cutting report
+                        generation time 9× to reducing manual data-entry effort by 70% through automation. I work
+                        test-first (TDD, pytest, 95%+ coverage) and thrive in Agile, cross-functional, remote teams.</p>
+                    <p data-i18n="about.p3">I'm based in Augsburg, Germany, hold a valid German residence permit with
+                        full work authorization, and I'm open to relocation across Germany.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span class="ic">🏗️</span>
+                        <div>
+                            <h4 data-i18n="about.h1title">API & System Architecture</h4>
+                            <p data-i18n="about.h1desc">Design REST/GraphQL APIs and distributed, microservice-based
+                                systems end to end.</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="ic">⚡</span>
+                        <div>
+                            <h4 data-i18n="about.h2title">Performance & Scale</h4>
+                            <p data-i18n="about.h2desc">Async processing with Celery/Redis, query tuning, and latency
+                                optimization at scale.</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="ic">✅</span>
+                        <div>
+                            <h4 data-i18n="about.h3title">Quality & Delivery</h4>
+                            <p data-i18n="about.h3desc">TDD, CI/CD, code reviews, and documentation adopted as team-wide
+                                standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <div class="container">
+            <span class="eyebrow" data-i18n="skills.eyebrow">Skills</span>
+            <h2 class="section-title" data-i18n="skills.title">Technical toolbox</h2>
+            <p class="section-lead" data-i18n="skills.lead">The languages, frameworks, and platforms I use to build
+                reliable backend systems.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c1"><span class="ic">🐍</span> Languages & Frameworks</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Django REST Framework</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">SQLAlchemy</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c2"><span class="ic">🗄️</span> Databases</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c3"><span class="ic">☁️</span> Cloud & DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">AWS RDS</span>
+                        <span class="tag">AWS S3</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Bash / Linux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c4"><span class="ic">🔌</span> APIs & Integrations</h3>
+                    <div class="tags">
+                        <span class="tag">RESTful APIs</span>
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">OAuth2</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">HubSpot</span>
+                        <span class="tag">Zapier</span>
+                        <span class="tag">Pipedrive</span>
+                        <span class="tag">Zoom</span>
+                        <span class="tag">Meta APIs</span>
+                        <span class="tag">LLM APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c5"><span class="ic">🧪</span> Testing & QA</h3>
+                    <div class="tags">
+                        <span class="tag">pytest</span>
+                        <span class="tag">TDD</span>
+                        <span class="tag">Unit Testing</span>
+                        <span class="tag">Integration Testing</span>
+                        <span class="tag">95%+ Coverage</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.c6"><span class="ic">🧭</span> Methodologies</h3>
+                    <div class="tags">
+                        <span class="tag">Agile / Scrum</span>
+                        <span class="tag">Code Review</span>
+                        <span class="tag">API Design</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">Technical Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience">
+        <div class="container">
+            <span class="eyebrow" data-i18n="exp.eyebrow">Experience</span>
+            <h2 class="section-title" data-i18n="exp.title">Professional journey</h2>
+            <p class="section-lead" data-i18n="exp.lead">5+ years across SaaS startups, fintech, and enterprise — remote
+                and on-site.</p>
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j1.role">Software Developer</span> <span
+                                    class="tl-company">· Traut Euch!</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j1.meta">
+                            <span class="chip">📍 Germany</span>
+                            <span class="chip">Jun 2026 – Present</span>
+                            <span class="chip">Part-time</span>
+                        </div>
+                        <ul data-i18n="exp.j1.bullets">
+                            <li>Building modern web applications and backend systems with <strong>Python, Django</strong>
+                                and <strong>PostgreSQL</strong>.</li>
+                            <li>Designing RESTful APIs and relational schemas for scalable business applications.</li>
+                            <li>Developing AI-driven automation with <strong>LLM integrations</strong> to optimize
+                                business processes.</li>
+                            <li>Writing unit and integration tests; participating in peer code reviews.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j2.role">Senior Backend Engineer</span> <span
+                                    class="tl-company">· Intentlead</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j2.meta">
+                            <span class="chip">📍 France (Remote)</span>
+                            <span class="chip">Jan 2025 – Jul 2025</span>
+                            <span class="chip">Part-time</span>
+                        </div>
+                        <ul data-i18n="exp.j2.bullets">
+                            <li>Built a <strong>HubSpot CRM integration</strong> automating lead-routing workflows,
+                                reducing manual data-entry effort by <strong>~70%</strong>.</li>
+                            <li>Maintained <strong>95%+ test coverage</strong> across a Django/Celery codebase with
+                                pytest; authored API docs that cut onboarding from 2 weeks to 3 days.</li>
+                            <li>Led weekly code reviews and served as technical point of contact for product engineering
+                                decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j3.role">Computer Engineer – Backend</span> <span
+                                    class="tl-company">· National Pension Fund</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j3.meta">
+                            <span class="chip">📍 Algeria</span>
+                            <span class="chip">Nov 2022 – Apr 2026</span>
+                            <span class="chip">Full-time</span>
+                        </div>
+                        <ul data-i18n="exp.j3.bullets">
+                            <li>Architected a <strong>financial management system</strong> from scratch (Django,
+                                PostgreSQL, Celery, Redis) processing <strong>10,000+ monthly transactions</strong> with
+                                full audit trails.</li>
+                            <li>Automated deployment, user-provisioning, and backup pipelines, saving ~8 hours/week of
+                                operational overhead.</li>
+                            <li>Optimized critical PostgreSQL/MySQL queries, cutting report generation from ~45s to under
+                                5s — a <strong>9× improvement</strong>.</li>
+                            <li>Authored pytest suites and technical documentation adopted as the team-wide standard;
+                                built CI/CD pipelines to reduce release risk.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j4.role">Senior Backend Developer</span> <span
+                                    class="tl-company">· Fintechracy</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j4.meta">
+                            <span class="chip">📍 France (Remote)</span>
+                            <span class="chip">Oct 2023 – Feb 2024</span>
+                            <span class="chip">Part-time</span>
+                        </div>
+                        <ul data-i18n="exp.j4.bullets">
+                            <li>Integrated <strong>OAuth2 Social Login</strong> (Apple, Google, Facebook) into a Django
+                                REST Framework backend, contributing to a <strong>20%+</strong> onboarding conversion
+                                increase.</li>
+                            <li>Designed and deployed secure REST API endpoints for a fintech mobile app with full input
+                                validation and <strong>JWT authentication</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j5.role">Backend Engineer & Integrations
+                                    Lead</span> <span class="tl-company">· Yobi</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j5.meta">
+                            <span class="chip">📍 San Jose, USA (Remote)</span>
+                            <span class="chip">Dec 2020 – Aug 2023</span>
+                            <span class="chip">Full-time</span>
+                        </div>
+                        <ul data-i18n="exp.j5.bullets">
+                            <li>Built and maintained Dockerized REST APIs integrating HubSpot, Zapier, Pipedrive, Zoom
+                                and Meta — handling <strong>50,000+ API calls/day</strong> at peak with CloudWatch
+                                monitoring.</li>
+                            <li>Built real-time messaging backends with Redis queues and microservices, achieving
+                                <strong>&lt;200ms</strong> message latency for enterprise clients.</li>
+                            <li>Refactored high-traffic integration endpoints, reducing API response latency by
+                                <strong>~35%</strong>.</li>
+                            <li>Deployed and maintained services on AWS EC2, RDS, S3 and CloudWatch.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-card">
+                        <div class="tl-head">
+                            <div class="tl-role"><span data-i18n="exp.j6.role">Python Engineer</span> <span
+                                    class="tl-company">· Call Sumo</span></div>
+                        </div>
+                        <div class="tl-meta" data-i18n="exp.j6.meta">
+                            <span class="chip">📍 San Jose, USA (Remote)</span>
+                            <span class="chip">Feb 2021 – Dec 2021</span>
+                            <span class="chip">Part-time</span>
+                        </div>
+                        <ul data-i18n="exp.j6.bullets">
+                            <li>Built automated call transcription pipelines on AWS EC2 (Python, Flask, S3), processing
+                                <strong>5,000 calls/month</strong> with secure audio storage.</li>
+                            <li>Created an admin dashboard and Google Data Studio reports, cutting manual reporting from 4
+                                hours/week to under 30 minutes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
     <section id="projects">
-        <h2>Key Projects</h2>
+        <div class="container">
+            <span class="eyebrow" data-i18n="proj.eyebrow">Projects</span>
+            <h2 class="section-title" data-i18n="proj.title">Selected work</h2>
+            <p class="section-lead" data-i18n="proj.lead">Hands-on projects showcasing backend architecture, async
+                processing, and AI integration.</p>
+            <div class="projects-grid">
 
-        <div class="project-card">
-            <div class="project-header">
-                <h3>DealScope AI - MVP</h3>
-                <button class="expand-btn">Details ▼</button>
-            </div>
-            <div class="project-details">
-                <p>AI Deal Intelligence & Competitor Tracker for Sales Teams. Features Implemented (MVP):</p>
-                <ul>
-                    <li>Company URL ingestion endpoint</li>
-                    <li>Website scraping (title/meta/description)</li>
-                    <li>AI company summary generation</li>
-                    <li>Competitor detection (5 competitors)</li>
-                    <li>Sales insight generation (pain points, objections, budget tier, buying signals)</li>
-                    <li>Buyer-readiness scoring</li>
-                    <li>Daily buyer-readiness recalculation with <code>daily_delta</code> and <code>weekly_delta</code>
-                    </li>
-                    <li>Multi-contact personalized outreach generation (CEO, VP Sales, RevOps; cold email + LinkedIn +
-                        follow-up)</li>
-                </ul>
-                <img src="images/dealscope-ai.png" alt="DealScope AI Screenshot"
-                    style="max-width:100%;height:auto;margin-bottom:12px;">
+                <div class="project-card expanded">
+                    <div class="project-header">
+                        <div>
+                            <h3>DealScope AI</h3>
+                            <div class="tagline" data-i18n="proj.p1.tag">AI deal intelligence & competitor tracker for
+                                sales teams</div>
+                        </div>
+                        <button class="expand-btn">Details ▲</button>
+                    </div>
+                    <div class="project-details">
+                        <img src="images/dealscope-ai.png" alt="DealScope AI screenshot">
+                        <p data-i18n="proj.p1.desc">End-to-end backend for automated company intelligence and outreach:
+                        </p>
+                        <ul data-i18n="proj.p1.bullets">
+                            <li>URL ingestion + automated web-scraping pipeline with LLM-powered company summaries in
+                                under 10 seconds</li>
+                            <li>Real-time engines for competitor detection, buyer-readiness scoring, and scheduled
+                                <code>daily_delta</code> / <code>weekly_delta</code> recalculations (Celery + Redis)</li>
+                            <li>Personalized multi-channel outreach (Email + LinkedIn) tailored to executive personas via
+                                LLM prompt engineering</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">LLM APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdou-chabira/DealScope-AI" target="_blank" rel="noopener"
+                                data-i18n="proj.link">GitHub Repository ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card expanded">
+                    <div class="project-header">
+                        <div>
+                            <h3>Lead Enrichment API</h3>
+                            <div class="tagline" data-i18n="proj.p2.tag">Async B2B data-enrichment platform</div>
+                        </div>
+                        <button class="expand-btn">Details ▲</button>
+                    </div>
+                    <div class="project-details">
+                        <img src="images/architecture-lead-enrichment.png" alt="Lead Enrichment architecture diagram">
+                        <p data-i18n="proj.p2.desc">A scalable, asynchronous lead-enrichment platform built with Django
+                            and Celery, simulating real-world SaaS enrichment workflows. Demonstrates distributed task
+                            processing, idempotency protection, rate limiting, monitoring, and production-grade security.
+                        </p>
+                        <div class="project-stack">
+                            <span class="tag">Django</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Idempotency</span>
+                            <span class="tag">Rate Limiting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdou-chabira/LeadEnrich_demo" target="_blank" rel="noopener"
+                                data-i18n="proj.link">GitHub Repository ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card expanded">
+                    <div class="project-header">
+                        <div>
+                            <h3>OAuth & HubSpot Integration</h3>
+                            <div class="tagline" data-i18n="proj.p3.tag">Async SaaS integration platform</div>
+                        </div>
+                        <button class="expand-btn">Details ▲</button>
+                    </div>
+                    <div class="project-details">
+                        <img src="images/architecture-oauth.png" alt="OAuth integration architecture diagram">
+                        <p data-i18n="proj.p3.desc">A robust, asynchronous integration platform built with Django and
+                            Celery, simulating OAuth connections, webhook processing, and SaaS API integrations. Showcases
+                            async workflows, idempotency, rate limiting, monitoring, and secure, production-ready
+                            deployment.</p>
+                        <div class="project-stack">
+                            <span class="tag">Django</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">OAuth2</span>
+                            <span class="tag">Webhooks</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdou-chabira/My_integration_Platform" target="_blank"
+                                rel="noopener" data-i18n="proj.link">GitHub Repository ↗</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Lead Enrichment API</h3>
-                <button class="expand-btn">Details ▼</button>
-            </div>
-            <div class="project-details">
-                <p>A scalable, asynchronous lead enrichment platform built with Django and Celery, designed to simulate
-                    real-world SaaS data enrichment workflows used in modern B2B systems.
-
-                    This project demonstrates advanced backend architecture patterns including distributed task
-                    processing, idempotency protection, rate limiting, monitoring, and production-grade security
-                    practices.</p>
-                <img src="images/architecture-lead-enrichment.png" alt="Lead Enrichment Architecture">
-                <p>GitHub: <a href="https://github.com/abdou-chabira/LeadEnrich_demo" target="_blank">Repository</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>OAuth & HubSpot Integration Simulation</h3>
-                <button class="expand-btn">Details ▼</button>
-            </div>
-            <div class="project-details">
-                <p>A robust, asynchronous integration platform built with Django and Celery, designed to simulate OAuth
-                    connections, webhook processing, and SaaS API integrations. This project showcases real-world
-                    backend engineering practices such as async workflows, idempotency, rate limiting, monitoring, and
-                    secure, production-ready deployment.</p>
-                <img src="images/architecture-oauth.png" alt="OAuth Architecture">
-                <p>GitHub: <a href="https://github.com/abdou-chabira/My_integration_Platform"
-                        target="_blank">Repository</a>
-                </p>
-            </div>
-        </div>
-
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:a.chabira101@gmail.com">a.chabira101@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/abdou-chabira" target="_blank">github.com/abdou-chabira </a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/chabira-abderrahmane/"
-                target="_blank">linkedin.com/in/chabira-abderrahmane</a></p>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+        <div class="container">
+            <span class="eyebrow" data-i18n="edu.eyebrow">Education & Languages</span>
+            <h2 class="section-title" data-i18n="edu.title">Background</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="degree" data-i18n="edu.d1.degree">M.Sc. Computer Science</div>
+                    <div class="school">University of Mohamed Khider, Biskra, Algeria</div>
+                    <div class="years">2016 – 2018</div>
+                    <p data-i18n="edu.d1.desc">Thesis: Design and Development of a Verification Application for
+                        Reconfigurable Systems.</p>
+                </div>
+                <div class="edu-card">
+                    <div class="degree" data-i18n="edu.d2.degree">B.Sc. Computer Science</div>
+                    <div class="school">University of Mohamed Khider, Biskra, Algeria</div>
+                    <div class="years">2013 – 2016</div>
+                    <p data-i18n="edu.d2.desc">Focus: Advanced Algorithms, Data Structures, Software Engineering (Agile,
+                        version control, system testing).</p>
+                </div>
+            </div>
+            <div class="lang-bars">
+                <div class="lang">
+                    <div class="lang-head"><span data-i18n="edu.l1.name">Arabic</span><span
+                            data-i18n="edu.l1.level">Native</span></div>
+                    <div class="bar"><span style="width:100%"></span></div>
+                </div>
+                <div class="lang">
+                    <div class="lang-head"><span data-i18n="edu.l2.name">English</span><span
+                            data-i18n="edu.l2.level">Fluent</span></div>
+                    <div class="bar"><span style="width:92%"></span></div>
+                </div>
+                <div class="lang">
+                    <div class="lang-head"><span data-i18n="edu.l3.name">French</span><span
+                            data-i18n="edu.l3.level">Fluent</span></div>
+                    <div class="bar"><span style="width:92%"></span></div>
+                </div>
+                <div class="lang">
+                    <div class="lang-head"><span data-i18n="edu.l4.name">German</span><span>A2</span></div>
+                    <div class="bar"><span style="width:35%"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+            <h2 class="section-title" data-i18n="contact.title">Let's build something reliable</h2>
+            <p class="section-lead" style="margin-left:auto;margin-right:auto;" data-i18n="contact.lead">I'm open to
+                full-time backend engineering roles across Germany. I hold a valid German residence permit with full work
+                authorization — feel free to reach out.</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="ic">✉️</div>
+                    <h4 data-i18n="contact.email">Email</h4>
+                    <a href="mailto:a.chabira101@gmail.com">a.chabira101@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="ic">💼</div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/chabira-abderrahmane/" target="_blank"
+                        rel="noopener">chabira-abderrahmane</a>
+                </div>
+                <div class="contact-card">
+                    <div class="ic">💻</div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/abdou-chabira" target="_blank" rel="noopener">abdou-chabira</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Abderrahmane Chabira. All rights reserved.</p>
+        <p data-i18n="footer.text">© 2026 Abderrahmane Chabira · Senior Backend Engineer · Augsburg, Germany</p>
     </footer>
 
     <script src="js/script.js"></script>

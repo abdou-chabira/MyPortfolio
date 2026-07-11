@@ -1,35 +1,198 @@
-// Smooth scroll for nav links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+// =========================================================
+//  Translations (EN default in HTML; DE swapped via JS)
+//  Values may contain trusted inline HTML.
+// =========================================================
+const translations = {
+    de: {
+        // Nav
+        'nav.about': 'Über mich',
+        'nav.skills': 'Kenntnisse',
+        'nav.experience': 'Erfahrung',
+        'nav.projects': 'Projekte',
+        'nav.education': 'Ausbildung',
+        'nav.contact': 'Kontakt',
+
+        // Hero
+        'hero.badge': 'Offen für Festanstellungen in Deutschland',
+        'hero.role': 'Senior Backend Engineer — Python · Django · Cloud',
+        'hero.desc': 'Ich entwerfe und entwickle skalierbare Backend-Systeme, RESTful- und GraphQL-APIs sowie cloud-native verteilte Dienste. Über 5 Jahre Erfahrung in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbaren Verbesserungen bei Performance und Zuverlässigkeit.',
+        'hero.cv': '⬇ Lebenslauf herunterladen',
+        'hero.contact': 'Kontakt aufnehmen',
+
+        // Stats
+        'stat.years': 'Jahre Erfahrung',
+        'stat.calls': 'API-Aufrufe/Tag bewältigt',
+        'stat.query': 'schnellere Abfragen',
+        'stat.coverage': 'Testabdeckung',
+
+        // About
+        'about.eyebrow': 'Über mich',
+        'about.title': 'Backend-Entwicklung mit messbarer Wirkung',
+        'about.p1': 'Ich bin Senior Backend Engineer mit über 5 Jahren Erfahrung im Entwurf und der Umsetzung skalierbarer Webanwendungen, RESTful- und GraphQL-APIs sowie cloud-nativer verteilter Systeme. Mein Kern-Stack umfasst Python, Django, Flask, FastAPI, PostgreSQL, Celery, Redis und AWS.',
+        'about.p2': 'Ich habe komplette API-Architekturen verantwortet, CI/CD-Pipelines aufgebaut, Junior-Entwickler betreut und kontinuierlich messbare Performance-Verbesserungen erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion manueller Dateneingabe um 70 % durch Automatisierung. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
+        'about.p3': 'Ich lebe in Augsburg, Deutschland, besitze einen gültigen deutschen Aufenthaltstitel mit voller Arbeitserlaubnis und bin offen für einen Umzug innerhalb Deutschlands.',
+        'about.h1title': 'API- & Systemarchitektur',
+        'about.h1desc': 'Entwurf von REST-/GraphQL-APIs und verteilten, microservice-basierten Systemen von Anfang bis Ende.',
+        'about.h2title': 'Performance & Skalierung',
+        'about.h2desc': 'Asynchrone Verarbeitung mit Celery/Redis, Query-Optimierung und Latenzreduktion im großen Maßstab.',
+        'about.h3title': 'Qualität & Auslieferung',
+        'about.h3desc': 'TDD, CI/CD, Code-Reviews und Dokumentation, die als teamweiter Standard übernommen wurden.',
+
+        // Skills
+        'skills.eyebrow': 'Kenntnisse',
+        'skills.title': 'Technischer Werkzeugkasten',
+        'skills.lead': 'Die Sprachen, Frameworks und Plattformen, mit denen ich zuverlässige Backend-Systeme baue.',
+        'skills.c1': '<span class="ic">🐍</span> Sprachen & Frameworks',
+        'skills.c2': '<span class="ic">🗄️</span> Datenbanken',
+        'skills.c3': '<span class="ic">☁️</span> Cloud & DevOps',
+        'skills.c4': '<span class="ic">🔌</span> APIs & Integrationen',
+        'skills.c5': '<span class="ic">🧪</span> Testing & QA',
+        'skills.c6': '<span class="ic">🧭</span> Methoden',
+
+        // Experience
+        'exp.eyebrow': 'Erfahrung',
+        'exp.title': 'Beruflicher Werdegang',
+        'exp.lead': 'Über 5 Jahre in SaaS-Startups, Fintech und Unternehmen – remote und vor Ort.',
+
+        'exp.j1.role': 'Softwareentwickler',
+        'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit</span>',
+        'exp.j1.bullets': '<li>Entwicklung moderner Webanwendungen und Backend-Systeme mit <strong>Python, Django</strong> und <strong>PostgreSQL</strong>.</li><li>Entwurf von RESTful-APIs und relationalen Schemata für skalierbare Geschäftsanwendungen.</li><li>Entwicklung KI-gestützter Automatisierung mit <strong>LLM-Integrationen</strong> zur Optimierung von Geschäftsprozessen.</li><li>Schreiben von Unit- und Integrationstests; Teilnahme an Peer-Code-Reviews.</li>',
+
+        'exp.j2.role': 'Senior Backend Engineer',
+        'exp.j2.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Jan 2025 – Jul 2025</span><span class="chip">Teilzeit</span>',
+        'exp.j2.bullets': '<li>Aufbau einer <strong>HubSpot-CRM-Integration</strong> zur Automatisierung von Lead-Routing-Workflows, wodurch der manuelle Dateneingabeaufwand um <strong>~70 %</strong> reduziert wurde.</li><li>Aufrechterhaltung von <strong>95 %+ Testabdeckung</strong> in einer Django/Celery-Codebasis mit pytest; API-Dokumentation, die die Einarbeitung von 2 Wochen auf 3 Tage verkürzte.</li><li>Leitung wöchentlicher Code-Reviews und technischer Ansprechpartner für produktbezogene Engineering-Entscheidungen.</li>',
+
+        'exp.j3.role': 'Computer-Ingenieur – Backend',
+        'exp.j3.meta': '<span class="chip">📍 Algerien</span><span class="chip">Nov 2022 – Apr 2026</span><span class="chip">Vollzeit</span>',
+        'exp.j3.bullets': '<li>Architektur eines <strong>Finanzverwaltungssystems</strong> von Grund auf (Django, PostgreSQL, Celery, Redis), das <strong>über 10.000 monatliche Transaktionen</strong> mit vollständigen Audit-Trails verarbeitet.</li><li>Automatisierung von Deployment-, Benutzerverwaltungs- und Backup-Pipelines, wodurch ca. 8 Stunden/Woche an operativem Aufwand eingespart wurden.</li><li>Optimierung kritischer PostgreSQL-/MySQL-Abfragen, wodurch die Berichtserstellung von ~45 s auf unter 5 s reduziert wurde – eine <strong>9×-Verbesserung</strong>.</li><li>Erstellung von pytest-Testsuiten und technischer Dokumentation, die als teamweiter Standard übernommen wurden; Aufbau von CI/CD-Pipelines zur Reduzierung des Release-Risikos.</li>',
+
+        'exp.j4.role': 'Senior Backend-Entwickler',
+        'exp.j4.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Okt 2023 – Feb 2024</span><span class="chip">Teilzeit</span>',
+        'exp.j4.bullets': '<li>Integration von <strong>OAuth2 Social Login</strong> (Apple, Google, Facebook) in ein Django-REST-Framework-Backend, was zu einer <strong>20 %+</strong> höheren Onboarding-Konversion beitrug.</li><li>Entwurf und Deployment sicherer REST-API-Endpunkte für eine Fintech-Mobile-App mit vollständiger Eingabevalidierung und <strong>JWT-Authentifizierung</strong>.</li>',
+
+        'exp.j5.role': 'Backend Engineer & Integrations-Lead',
+        'exp.j5.meta': '<span class="chip">📍 San Jose, USA (Remote)</span><span class="chip">Dez 2020 – Aug 2023</span><span class="chip">Vollzeit</span>',
+        'exp.j5.bullets': '<li>Aufbau und Wartung Dockerisierter REST-APIs mit Integrationen zu HubSpot, Zapier, Pipedrive, Zoom und Meta – Verarbeitung von <strong>über 50.000 API-Aufrufen/Tag</strong> bei Spitzenlast mit CloudWatch-Monitoring.</li><li>Aufbau von Echtzeit-Messaging-Backends mit Redis-Queues und Microservices, mit einer Nachrichtenlatenz von <strong>&lt;200 ms</strong> für Enterprise-Kunden.</li><li>Refactoring stark frequentierter Integrations-Endpunkte, wodurch die API-Antwortlatenz um <strong>~35 %</strong> gesenkt wurde.</li><li>Deployment und Wartung von Diensten auf AWS EC2, RDS, S3 und CloudWatch.</li>',
+
+        'exp.j6.role': 'Python-Entwickler',
+        'exp.j6.meta': '<span class="chip">📍 San Jose, USA (Remote)</span><span class="chip">Feb 2021 – Dez 2021</span><span class="chip">Teilzeit</span>',
+        'exp.j6.bullets': '<li>Aufbau automatisierter Anruf-Transkriptions-Pipelines auf AWS EC2 (Python, Flask, S3), Verarbeitung von <strong>5.000 Anrufen/Monat</strong> mit sicherer Audiospeicherung.</li><li>Erstellung eines Admin-Dashboards und Google-Data-Studio-Berichten, wodurch der manuelle Reporting-Aufwand von 4 Stunden/Woche auf unter 30 Minuten reduziert wurde.</li>',
+
+        // Projects
+        'proj.eyebrow': 'Projekte',
+        'proj.title': 'Ausgewählte Arbeiten',
+        'proj.lead': 'Praxisprojekte mit Fokus auf Backend-Architektur, asynchrone Verarbeitung und KI-Integration.',
+        'proj.link': 'GitHub-Repository ↗',
+        'proj.p1.tag': 'KI-Deal-Intelligence & Wettbewerbs-Tracker für Vertriebsteams',
+        'proj.p1.desc': 'End-to-End-Backend für automatisierte Unternehmensrecherche und Outreach:',
+        'proj.p1.bullets': '<li>URL-Erfassung + automatisierte Web-Scraping-Pipeline mit LLM-gestützten Unternehmenszusammenfassungen in unter 10 Sekunden</li><li>Echtzeit-Engines für Wettbewerbererkennung, Buyer-Readiness-Scoring und geplante <code>daily_delta</code>- / <code>weekly_delta</code>-Neuberechnungen (Celery + Redis)</li><li>Personalisierter Multi-Channel-Outreach (E-Mail + LinkedIn), zugeschnitten auf Executive-Personas mittels LLM-Prompt-Engineering</li>',
+        'proj.p2.tag': 'Asynchrone B2B-Datenanreicherungs-Plattform',
+        'proj.p2.desc': 'Eine skalierbare, asynchrone Lead-Enrichment-Plattform mit Django und Celery, die reale SaaS-Enrichment-Workflows simuliert. Demonstriert verteilte Task-Verarbeitung, Idempotenz-Schutz, Rate-Limiting, Monitoring und produktionsreife Sicherheit.',
+        'proj.p3.tag': 'Asynchrone SaaS-Integrationsplattform',
+        'proj.p3.desc': 'Eine robuste, asynchrone Integrationsplattform mit Django und Celery, die OAuth-Verbindungen, Webhook-Verarbeitung und SaaS-API-Integrationen simuliert. Zeigt asynchrone Workflows, Idempotenz, Rate-Limiting, Monitoring und sicheres, produktionsreifes Deployment.',
+
+        // Education
+        'edu.eyebrow': 'Ausbildung & Sprachen',
+        'edu.title': 'Hintergrund',
+        'edu.d1.degree': 'M.Sc. Informatik',
+        'edu.d1.desc': 'Masterarbeit: Entwurf und Entwicklung einer Verifikationsanwendung für rekonfigurierbare Systeme.',
+        'edu.d2.degree': 'B.Sc. Informatik',
+        'edu.d2.desc': 'Schwerpunkt: Fortgeschrittene Algorithmen, Datenstrukturen, Software-Engineering (Agile, Versionskontrolle, Systemtests).',
+        'edu.l1.name': 'Arabisch',
+        'edu.l1.level': 'Muttersprache',
+        'edu.l2.name': 'Englisch',
+        'edu.l2.level': 'Fließend',
+        'edu.l3.name': 'Französisch',
+        'edu.l3.level': 'Fließend',
+        'edu.l4.name': 'Deutsch',
+
+        // Contact
+        'contact.eyebrow': 'Kontakt',
+        'contact.title': 'Lassen Sie uns etwas Zuverlässiges bauen',
+        'contact.lead': 'Ich bin offen für Festanstellungen als Backend-Entwickler in ganz Deutschland. Ich besitze einen gültigen deutschen Aufenthaltstitel mit voller Arbeitserlaubnis – melden Sie sich gerne.',
+        'contact.email': 'E-Mail',
+
+        // Footer
+        'footer.text': '© 2026 Abderrahmane Chabira · Senior Backend Engineer · Augsburg, Deutschland'
+    }
+};
+
+// Store original English HTML so we can switch back without reloading.
+const originalEN = {};
+document.querySelectorAll('[data-i18n]').forEach(el => {
+    originalEN[el.getAttribute('data-i18n')] = el.innerHTML;
 });
 
-// Project card expand/collapse
-document.querySelectorAll('.expand-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const card = btn.closest('.project-card');
-        card.classList.toggle('expanded');
-        btn.textContent = card.classList.contains('expanded') ? 'Details ▲' : 'Details ▼';
-    });
-});
+const langBtn = document.getElementById('toggleLang');
 
-// Expand all project cards by default
-window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.project-card').forEach(card => {
-        card.classList.add('expanded');
-        const btn = card.querySelector('.expand-btn');
-        if (btn) btn.textContent = 'Details ▲';
+function applyLang(lang) {
+    const dict = lang === 'de' ? translations.de : originalEN;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = lang === 'de' ? dict[key] : originalEN[key];
+        if (val !== undefined) el.innerHTML = val;
     });
-});
+    document.documentElement.lang = lang;
+    if (langBtn) langBtn.textContent = lang === 'de' ? '🌐 English' : '🌐 Deutsch';
+    localStorage.setItem('lang', lang);
+}
 
-// Dark/Light mode toggle
+// Initial language: saved choice → browser language → English
+const savedLang = localStorage.getItem('lang');
+if (savedLang) {
+    applyLang(savedLang);
+} else if ((navigator.language || '').toLowerCase().startsWith('de')) {
+    applyLang('de');
+}
+
+if (langBtn) {
+    langBtn.addEventListener('click', () => {
+        const next = document.documentElement.lang === 'de' ? 'en' : 'de';
+        applyLang(next);
+    });
+}
+
+// ===== Theme toggle (with persistence) =====
 const toggleBtn = document.getElementById('toggleTheme');
-toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    document.body.classList.toggle('light-mode');
-    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+
+function applyTheme(mode) {
+    const dark = mode === 'dark';
+    document.body.classList.toggle('dark-mode', dark);
+    document.body.classList.toggle('light-mode', !dark);
+    if (toggleBtn) toggleBtn.textContent = dark ? '☀️ Light' : '🌙 Dark';
+}
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    applyTheme(savedTheme);
+} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    applyTheme('dark');
+}
+
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        const nowDark = !document.body.classList.contains('dark-mode');
+        applyTheme(nowDark ? 'dark' : 'light');
+        localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+    });
+}
+
+// ===== Mobile nav toggle =====
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => navLinks.classList.remove('open'))
+    );
+}
+
+// ===== Project card expand / collapse =====
+document.querySelectorAll('.project-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const card = header.closest('.project-card');
+        card.classList.toggle('expanded');
+        const btn = card.querySelector('.expand-btn');
+        if (btn) btn.textContent = card.classList.contains('expanded') ? 'Details ▲' : 'Details ▼';
+    });
 });
