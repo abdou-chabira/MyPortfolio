@@ -58,15 +58,15 @@ const translations = {
         'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit</span>',
         'exp.j1.bullets': '<li>Entwicklung moderner Webanwendungen und Backend-Systeme mit <strong>Python, Django</strong> und <strong>PostgreSQL</strong>.</li><li>Entwurf von RESTful-APIs und relationalen Schemata für skalierbare Geschäftsanwendungen.</li><li>Entwicklung KI-gestützter Automatisierung mit <strong>LLM-Integrationen</strong> zur Optimierung von Geschäftsprozessen.</li><li>Schreiben von Unit- und Integrationstests; Teilnahme an Peer-Code-Reviews.</li>',
 
-        'exp.j2.role': 'Senior Backend Engineer',
+        'exp.j2.role': 'Backend Engineer',
         'exp.j2.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Jan 2025 – Jul 2025</span><span class="chip">Teilzeit</span>',
-        'exp.j2.bullets': '<li>Aufbau einer <strong>HubSpot-CRM-Integration</strong> zur Automatisierung von Lead-Routing-Workflows, wodurch der manuelle Dateneingabeaufwand um <strong>~70 %</strong> reduziert wurde.</li><li>Aufrechterhaltung von <strong>95 %+ Testabdeckung</strong> in einer Django/Celery-Codebasis mit pytest; API-Dokumentation, die die Einarbeitung von 2 Wochen auf 3 Tage verkürzte.</li><li>Leitung wöchentlicher Code-Reviews und technischer Ansprechpartner für produktbezogene Engineering-Entscheidungen.</li>',
+        'exp.j2.bullets': '<li>Aufbau einer <strong>HubSpot-CRM-Integration</strong> zur Automatisierung von Lead-Routing-Workflows, wodurch der manuelle Dateneingabeaufwand um <strong>~70 %</strong> reduziert wurde.</li><li>Aufrechterhaltung von <strong>95 %+ Testabdeckung</strong> in einer Django/Celery-Codebasis mit pytest; API-Dokumentation, die die Einarbeitung von 2 Wochen auf 3 Tage verkürzte.</li><li>Unterstützung der Engineering-Leitung durch die Moderation wöchentlicher Code-Reviews und die Abstimmung technischer Entscheidungen mit Produkt- und Geschäftszielen.</li>',
 
         'exp.j3.role': 'Computer-Ingenieur – Backend',
         'exp.j3.meta': '<span class="chip">📍 Algerien</span><span class="chip">Nov 2022 – Apr 2026</span><span class="chip">Vollzeit</span>',
         'exp.j3.bullets': '<li>Architektur eines <strong>Finanzverwaltungssystems</strong> von Grund auf (Django, PostgreSQL, Celery, Redis), das <strong>über 10.000 monatliche Transaktionen</strong> mit vollständigen Audit-Trails verarbeitet.</li><li>Automatisierung von Deployment-, Benutzerverwaltungs- und Backup-Pipelines, wodurch ca. 8 Stunden/Woche an operativem Aufwand eingespart wurden.</li><li>Optimierung kritischer PostgreSQL-/MySQL-Abfragen, wodurch die Berichtserstellung von ~45 s auf unter 5 s reduziert wurde – eine <strong>9×-Verbesserung</strong>.</li><li>Erstellung von pytest-Testsuiten und technischer Dokumentation, die als teamweiter Standard übernommen wurden; Aufbau von CI/CD-Pipelines zur Reduzierung des Release-Risikos.</li>',
 
-        'exp.j4.role': 'Senior Backend-Entwickler',
+        'exp.j4.role': 'Python-Entwickler',
         'exp.j4.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Okt 2023 – Feb 2024</span><span class="chip">Teilzeit</span>',
         'exp.j4.bullets': '<li>Integration von <strong>OAuth2 Social Login</strong> (Apple, Google, Facebook) in ein Django-REST-Framework-Backend, was zu einer <strong>20 %+</strong> höheren Onboarding-Konversion beitrug.</li><li>Entwurf und Deployment sicherer REST-API-Endpunkte für eine Fintech-Mobile-App mit vollständiger Eingabevalidierung und <strong>JWT-Authentifizierung</strong>.</li>',
 
