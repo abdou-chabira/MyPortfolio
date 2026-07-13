@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahmane Chabira | Senior Backend Engineer</title>
+    <title>Abderrahmane Chabira | Backend Engineer</title>
     <meta name="description"
-        content="Abderrahmane Chabira — Senior Backend Engineer with 5+ years building scalable Python, Django, and cloud-native APIs. Based in Augsburg, Germany, with full work authorization.">
+        content="Abderrahmane Chabira — Backend Engineer with 5+ years building scalable web applications, RESTful APIs, and cloud-native distributed systems in Python. Based in Augsburg, Germany, with full work authorization.">
     <meta name="author" content="Abderrahmane Chabira">
     <!-- Open Graph -->
-    <meta property="og:title" content="Abderrahmane Chabira | Senior Backend Engineer">
+    <meta property="og:title" content="Abderrahmane Chabira | Backend Engineer">
     <meta property="og:description"
-        content="Senior Backend Engineer — Python, Django, FastAPI, PostgreSQL, Celery, AWS. Based in Germany.">
+        content="Backend Engineer — Python, Django, FastAPI, PostgreSQL, Celery, Redis, Docker, AWS. Based in Germany.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 
 <body class="light-mode">
@@ -48,13 +48,24 @@
                 <span class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Open to full-time roles
                         in Germany</span></span>
                 <h1>Abderrahmane <span class="accent">Chabira</span></h1>
-                <p class="hero-role" data-i18n="hero.role">Senior Backend Engineer — Python · Django · Cloud</p>
-                <p class="hero-desc" data-i18n="hero.desc">I design and ship scalable backend systems, RESTful & GraphQL
-                    APIs, and cloud-native distributed services. 5+ years across international SaaS startups and
-                    enterprise environments, with a track record of measurable performance and reliability gains.</p>
+                <p class="hero-role" data-i18n="hero.role">Backend Engineer — Python · Django · Cloud</p>
+                <p class="hero-desc" data-i18n="hero.desc">I build scalable web applications, RESTful APIs, and
+                    cloud-native distributed systems in Python — Django, FastAPI, PostgreSQL, Celery, Redis, Docker, and
+                    AWS. 5+ years across international SaaS startups and enterprise environments, with a track record of
+                    measurable impact: 9× faster reporting, 35% lower API latency, and systems handling 50,000+
+                    requests/day.</p>
                 <div class="hero-cta">
-                    <a href="assets/Abderrahmane_Chabira_CV.pdf" class="btn btn-primary" download
-                        data-i18n="hero.cv">⬇ Download CV</a>
+                    <div class="cv-dropdown" id="cvDropdown">
+                        <button type="button" class="btn btn-primary" id="cvToggle" aria-haspopup="true"
+                            aria-expanded="false"><span data-i18n="hero.cv">⬇ Download CV</span> <span class="caret"
+                                aria-hidden="true">▾</span></button>
+                        <div class="cv-menu" role="menu" aria-label="Choose CV language">
+                            <a href="assets/Abderrahmane_Chabira_CV.pdf" download role="menuitem"><span
+                                    class="cv-lang">EN</span> <span data-i18n="hero.cvEn">English</span></a>
+                            <a href="assets/Abderrahmane_Chabira_Lebenslauf.pdf" download role="menuitem"><span
+                                    class="cv-lang">DE</span> <span data-i18n="hero.cvDe">Deutsch</span></a>
+                        </div>
+                    </div>
                     <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Get in touch</a>
                 </div>
                 <div class="hero-socials">
@@ -114,13 +125,13 @@
             <h2 class="section-title" data-i18n="about.title">Backend engineering with measurable impact</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p data-i18n="about.p1">I'm a Senior Backend Engineer with 5+ years designing and delivering scalable
-                        web applications, RESTful and GraphQL APIs, and cloud-native distributed systems. My core stack
-                        is Python, Django, Flask, FastAPI, PostgreSQL, Celery, Redis, and AWS.</p>
-                    <p data-i18n="about.p2">I've owned full API architecture, built CI/CD pipelines, mentored junior
-                        engineers, and consistently delivered measurable performance improvements — from cutting report
-                        generation time 9× to reducing manual data-entry effort by 70% through automation. I work
-                        test-first (TDD, pytest, 95%+ coverage) and thrive in Agile, cross-functional, remote teams.</p>
+                    <p data-i18n="about.p1">I'm a Backend Engineer with 5+ years of experience building scalable web
+                        applications, RESTful APIs, and cloud-native distributed systems in Python. My core stack is
+                        Django, FastAPI, PostgreSQL, Celery, Redis, Docker, and AWS.</p>
+                    <p data-i18n="about.p2">I've owned full API architecture end to end, built CI/CD pipelines, and
+                        consistently delivered measurable impact — from cutting report generation time 9× to reducing
+                        average API latency by 35% and handling 50,000+ requests/day. I work test-first (TDD, pytest,
+                        95%+ coverage) and thrive in Agile, cross-functional, remote teams.</p>
                     <p data-i18n="about.p3">I'm based in Augsburg, Germany, hold a valid German residence permit with
                         full work authorization, and I'm open to relocation across Germany.</p>
                 </div>
@@ -241,28 +252,30 @@
         <div class="container">
             <span class="eyebrow" data-i18n="exp.eyebrow">Experience</span>
             <h2 class="section-title" data-i18n="exp.title">Professional journey</h2>
-            <p class="section-lead" data-i18n="exp.lead">5+ years across SaaS startups, fintech, and enterprise — remote
-                and on-site.</p>
+            <p class="section-lead" data-i18n="exp.lead">5+ years across international SaaS startups and enterprise —
+                remote and on-site.</p>
             <div class="timeline">
 
                 <div class="tl-item">
                     <div class="tl-card">
                         <div class="tl-head">
-                            <div class="tl-role"><span data-i18n="exp.j1.role">Software Developer</span> <span
-                                    class="tl-company">· Traut Euch!</span></div>
+                            <div class="tl-role"><span data-i18n="exp.j1.role">Software Developer (Python/Django)</span>
+                                <span class="tl-company">· Traut Euch!</span></div>
                         </div>
                         <div class="tl-meta" data-i18n="exp.j1.meta">
                             <span class="chip">📍 Germany</span>
                             <span class="chip">Jun 2026 – Present</span>
-                            <span class="chip">Part-time</span>
+                            <span class="chip">Part-time (Minijob)</span>
                         </div>
                         <ul data-i18n="exp.j1.bullets">
-                            <li>Building modern web applications and backend systems with <strong>Python, Django</strong>
-                                and <strong>PostgreSQL</strong>.</li>
-                            <li>Designing RESTful APIs and relational schemas for scalable business applications.</li>
-                            <li>Developing AI-driven automation with <strong>LLM integrations</strong> to optimize
-                                business processes.</li>
-                            <li>Writing unit and integration tests; participating in peer code reviews.</li>
+                            <li>Developing modern web applications and backend systems with <strong>Python, Django</strong>
+                                and <strong>PostgreSQL</strong> databases.</li>
+                            <li>Designing and integrating RESTful APIs and relational database schemas for scalable
+                                business applications.</li>
+                            <li>Building and deploying AI-driven automation solutions with <strong>LLM
+                                    integrations</strong> to optimize business processes.</li>
+                            <li>Collaborating closely with the team on code reviews and shared coding standards to support
+                                consistent quality.</li>
                         </ul>
                     </div>
                 </div>
@@ -271,45 +284,25 @@
                     <div class="tl-card">
                         <div class="tl-head">
                             <div class="tl-role"><span data-i18n="exp.j2.role">Backend Engineer</span> <span
-                                    class="tl-company">· Intentlead</span></div>
-                        </div>
-                        <div class="tl-meta" data-i18n="exp.j2.meta">
-                            <span class="chip">📍 France (Remote)</span>
-                            <span class="chip">Jan 2025 – Jul 2025</span>
-                            <span class="chip">Part-time</span>
-                        </div>
-                        <ul data-i18n="exp.j2.bullets">
-                            <li>Built a <strong>HubSpot CRM integration</strong> automating lead-routing workflows,
-                                reducing manual data-entry effort by <strong>~70%</strong>.</li>
-                            <li>Maintained <strong>95%+ test coverage</strong> across a Django/Celery codebase with
-                                pytest; authored API docs that cut onboarding from 2 weeks to 3 days.</li>
-                            <li>Supported engineering leadership by facilitating weekly code reviews and aligning
-                                technical decisions with product and business goals.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="tl-item">
-                    <div class="tl-card">
-                        <div class="tl-head">
-                            <div class="tl-role"><span data-i18n="exp.j3.role">Computer Engineer – Backend</span> <span
                                     class="tl-company">· National Pension Fund</span></div>
                         </div>
-                        <div class="tl-meta" data-i18n="exp.j3.meta">
+                        <div class="tl-meta" data-i18n="exp.j2.meta">
                             <span class="chip">📍 Algeria</span>
-                            <span class="chip">Nov 2022 – Apr 2026</span>
+                            <span class="chip">Aug 2023 – Apr 2026</span>
                             <span class="chip">Full-time</span>
                         </div>
-                        <ul data-i18n="exp.j3.bullets">
-                            <li>Architected a <strong>financial management system</strong> from scratch (Django,
-                                PostgreSQL, Celery, Redis) processing <strong>10,000+ monthly transactions</strong> with
-                                full audit trails.</li>
-                            <li>Automated deployment, user-provisioning, and backup pipelines, saving ~8 hours/week of
-                                operational overhead.</li>
-                            <li>Optimized critical PostgreSQL/MySQL queries, cutting report generation from ~45s to under
+                        <ul data-i18n="exp.j2.bullets">
+                            <li>Architected and built a <strong>financial management system</strong> from scratch (Django,
+                                PostgreSQL, Celery, Redis) replacing a legacy spreadsheet process and processing
+                                <strong>10,000+ monthly transactions</strong> with full audit trails.</li>
+                            <li>Automated deployment, user-provisioning, and backup pipelines via Python and Bash scripts,
+                                saving ~8 hours/week of operational overhead.</li>
+                            <li>Optimized critical PostgreSQL/MySQL queries, reducing report generation from ~45s to under
                                 5s — a <strong>9× improvement</strong>.</li>
-                            <li>Authored pytest suites and technical documentation adopted as the team-wide standard;
-                                built CI/CD pipelines to reduce release risk.</li>
+                            <li>Authored comprehensive pytest suites and technical documentation standardized across the
+                                engineering department.</li>
+                            <li>Implemented CI/CD pipelines using Git and Bash scripts to streamline deployment and reduce
+                                release risk.</li>
                         </ul>
                     </div>
                 </div>
@@ -317,64 +310,26 @@
                 <div class="tl-item">
                     <div class="tl-card">
                         <div class="tl-head">
-                            <div class="tl-role"><span data-i18n="exp.j4.role">Python Developer</span> <span
-                                    class="tl-company">· Fintechracy</span></div>
+                            <div class="tl-role"><span data-i18n="exp.j3.role">Backend Engineer</span> <span
+                                    class="tl-company">· Yobi</span></div>
                         </div>
-                        <div class="tl-meta" data-i18n="exp.j4.meta">
-                            <span class="chip">📍 France (Remote)</span>
-                            <span class="chip">Oct 2023 – Feb 2024</span>
-                            <span class="chip">Part-time</span>
-                        </div>
-                        <ul data-i18n="exp.j4.bullets">
-                            <li>Integrated <strong>OAuth2 Social Login</strong> (Apple, Google, Facebook) into a Django
-                                REST Framework backend, contributing to a <strong>20%+</strong> onboarding conversion
-                                increase.</li>
-                            <li>Designed and deployed secure REST API endpoints for a fintech mobile app with full input
-                                validation and <strong>JWT authentication</strong>.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="tl-item">
-                    <div class="tl-card">
-                        <div class="tl-head">
-                            <div class="tl-role"><span data-i18n="exp.j5.role">Backend Engineer & Integrations
-                                    Lead</span> <span class="tl-company">· Yobi</span></div>
-                        </div>
-                        <div class="tl-meta" data-i18n="exp.j5.meta">
+                        <div class="tl-meta" data-i18n="exp.j3.meta">
                             <span class="chip">📍 San Jose, USA (Remote)</span>
                             <span class="chip">Dec 2020 – Aug 2023</span>
                             <span class="chip">Full-time</span>
                         </div>
-                        <ul data-i18n="exp.j5.bullets">
-                            <li>Built and maintained Dockerized REST APIs integrating HubSpot, Zapier, Pipedrive, Zoom
-                                and Meta — handling <strong>50,000+ API calls/day</strong> at peak with CloudWatch
-                                monitoring.</li>
-                            <li>Built real-time messaging backends with Redis queues and microservices, achieving
-                                <strong>&lt;200ms</strong> message latency for enterprise clients.</li>
-                            <li>Refactored high-traffic integration endpoints, reducing API response latency by
-                                <strong>~35%</strong>.</li>
-                            <li>Deployed and maintained services on AWS EC2, RDS, S3 and CloudWatch.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="tl-item">
-                    <div class="tl-card">
-                        <div class="tl-head">
-                            <div class="tl-role"><span data-i18n="exp.j6.role">Python Engineer</span> <span
-                                    class="tl-company">· Call Sumo</span></div>
-                        </div>
-                        <div class="tl-meta" data-i18n="exp.j6.meta">
-                            <span class="chip">📍 San Jose, USA (Remote)</span>
-                            <span class="chip">Feb 2021 – Dec 2021</span>
-                            <span class="chip">Part-time</span>
-                        </div>
-                        <ul data-i18n="exp.j6.bullets">
-                            <li>Built automated call transcription pipelines on AWS EC2 (Python, Flask, S3), processing
-                                <strong>5,000 calls/month</strong> with secure audio storage.</li>
-                            <li>Created an admin dashboard and Google Data Studio reports, cutting manual reporting from 4
-                                hours/week to under 30 minutes.</li>
+                        <ul data-i18n="exp.j3.bullets">
+                            <li>Developed and maintained Dockerized REST APIs integrating HubSpot, Zapier, Pipedrive, Zoom
+                                and Meta — handling <strong>50,000+ API calls/day</strong> at peak with real-time
+                                CloudWatch monitoring.</li>
+                            <li>Built real-time messaging backends with Redis queues and Dockerized microservices,
+                                achieving <strong>&lt;200ms</strong> message latency for enterprise clients.</li>
+                            <li>Refactored high-traffic third-party integration endpoints, reducing average API response
+                                latency by <strong>~35%</strong>.</li>
+                            <li>Implemented <strong>OAuth2 Social Login</strong> (Google, Apple, Facebook), directly
+                                improving onboarding conversion metrics.</li>
+                            <li>Deployed and maintained services on AWS EC2 and RDS; used S3 for file storage and
+                                CloudWatch for alerting.</li>
                         </ul>
                     </div>
                 </div>
@@ -565,10 +520,10 @@
     </section>
 
     <footer>
-        <p data-i18n="footer.text">© 2026 Abderrahmane Chabira · Senior Backend Engineer · Augsburg, Germany</p>
+        <p data-i18n="footer.text">© 2026 Abderrahmane Chabira · Backend Engineer · Augsburg, Germany</p>
     </footer>
 
-    <script src="js/script.js?v=3"></script>
+    <script src="js/script.js?v=4"></script>
 </body>
 
 </html>

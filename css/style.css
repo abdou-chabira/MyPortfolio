@@ -181,6 +181,50 @@ section:nth-child(even) { background: var(--bg-alt); }
 .btn-outline { background: transparent; color: var(--text); border-color: var(--border); }
 .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
 
+/* CV download language chooser */
+.cv-dropdown { position: relative; display: inline-flex; }
+.cv-dropdown .caret { font-size: 0.7rem; line-height: 1; transition: transform 0.2s; }
+.cv-dropdown.open .caret { transform: rotate(180deg); }
+.cv-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    padding: 6px;
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    z-index: 60;
+}
+.cv-dropdown.open .cv-menu { display: flex; }
+.cv-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+}
+.cv-menu a:hover { background: var(--primary); color: #fff; }
+.cv-menu a:hover .cv-lang { border-color: rgba(255, 255, 255, 0.5); color: #fff; }
+.cv-lang {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 2px 6px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
 .hero-socials { display: flex; gap: 14px; align-items: center; }
 .hero-socials a {
     color: var(--text-muted);
@@ -432,4 +476,7 @@ footer {
     .contact-cards { grid-template-columns: 1fr; }
     .hero-cta { width: 100%; }
     .btn { flex: 1; justify-content: center; }
+    .hero-cta > .cv-dropdown { flex: 1; }
+    .cv-dropdown > .btn { width: 100%; }
+    .cv-menu { left: 0; right: 0; }
 }

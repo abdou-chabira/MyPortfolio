@@ -14,9 +14,11 @@ const translations = {
 
         // Hero
         'hero.badge': 'Offen für Festanstellungen in Deutschland',
-        'hero.role': 'Senior Backend Engineer — Python · Django · Cloud',
-        'hero.desc': 'Ich entwerfe und entwickle skalierbare Backend-Systeme, RESTful- und GraphQL-APIs sowie cloud-native verteilte Dienste. Über 5 Jahre Erfahrung in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbaren Verbesserungen bei Performance und Zuverlässigkeit.',
+        'hero.role': 'Backend Engineer — Python · Django · Cloud',
+        'hero.desc': 'Ich entwickle skalierbare Webanwendungen, RESTful-APIs und cloud-native verteilte Systeme in Python — Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS. Über 5 Jahre in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbarer Wirkung: 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
         'hero.cv': '⬇ Lebenslauf herunterladen',
+        'hero.cvEn': 'Englisch',
+        'hero.cvDe': 'Deutsch',
         'hero.contact': 'Kontakt aufnehmen',
 
         // Stats
@@ -28,8 +30,8 @@ const translations = {
         // About
         'about.eyebrow': 'Über mich',
         'about.title': 'Backend-Entwicklung mit messbarer Wirkung',
-        'about.p1': 'Ich bin Senior Backend Engineer mit über 5 Jahren Erfahrung im Entwurf und der Umsetzung skalierbarer Webanwendungen, RESTful- und GraphQL-APIs sowie cloud-nativer verteilter Systeme. Mein Kern-Stack umfasst Python, Django, Flask, FastAPI, PostgreSQL, Celery, Redis und AWS.',
-        'about.p2': 'Ich habe komplette API-Architekturen verantwortet, CI/CD-Pipelines aufgebaut, Junior-Entwickler betreut und kontinuierlich messbare Performance-Verbesserungen erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion manueller Dateneingabe um 70 % durch Automatisierung. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
+        'about.p1': 'Ich bin Backend Engineer mit über 5 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, RESTful-APIs und cloud-nativer verteilter Systeme in Python. Mein Kern-Stack umfasst Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS.',
+        'about.p2': 'Ich habe komplette API-Architekturen von Anfang bis Ende verantwortet, CI/CD-Pipelines aufgebaut und kontinuierlich messbare Wirkung erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion der durchschnittlichen API-Latenz um 35 % und der Bewältigung von über 50.000 Anfragen/Tag. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
         'about.p3': 'Ich lebe in Augsburg, Deutschland, besitze einen gültigen deutschen Aufenthaltstitel mit voller Arbeitserlaubnis und bin offen für einen Umzug innerhalb Deutschlands.',
         'about.h1title': 'API- & Systemarchitektur',
         'about.h1desc': 'Entwurf von REST-/GraphQL-APIs und verteilten, microservice-basierten Systemen von Anfang bis Ende.',
@@ -52,31 +54,19 @@ const translations = {
         // Experience
         'exp.eyebrow': 'Erfahrung',
         'exp.title': 'Beruflicher Werdegang',
-        'exp.lead': 'Über 5 Jahre in SaaS-Startups, Fintech und Unternehmen – remote und vor Ort.',
+        'exp.lead': 'Über 5 Jahre in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
 
-        'exp.j1.role': 'Softwareentwickler',
-        'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit</span>',
-        'exp.j1.bullets': '<li>Entwicklung moderner Webanwendungen und Backend-Systeme mit <strong>Python, Django</strong> und <strong>PostgreSQL</strong>.</li><li>Entwurf von RESTful-APIs und relationalen Schemata für skalierbare Geschäftsanwendungen.</li><li>Entwicklung KI-gestützter Automatisierung mit <strong>LLM-Integrationen</strong> zur Optimierung von Geschäftsprozessen.</li><li>Schreiben von Unit- und Integrationstests; Teilnahme an Peer-Code-Reviews.</li>',
+        'exp.j1.role': 'Softwareentwickler (Python/Django)',
+        'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit (Minijob)</span>',
+        'exp.j1.bullets': '<li>Entwicklung moderner Webanwendungen und Backend-Systeme mit <strong>Python, Django</strong> und <strong>PostgreSQL</strong>-Datenbanken.</li><li>Entwurf und Integration von RESTful-APIs und relationalen Datenbankschemata für skalierbare Geschäftsanwendungen.</li><li>Entwicklung und Bereitstellung KI-gestützter Automatisierungslösungen mit <strong>LLM-Integrationen</strong> zur Optimierung von Geschäftsprozessen.</li><li>Enge Zusammenarbeit mit dem Team bei Code-Reviews und gemeinsamen Coding-Standards zur Sicherung gleichbleibender Qualität.</li>',
 
         'exp.j2.role': 'Backend Engineer',
-        'exp.j2.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Jan 2025 – Jul 2025</span><span class="chip">Teilzeit</span>',
-        'exp.j2.bullets': '<li>Aufbau einer <strong>HubSpot-CRM-Integration</strong> zur Automatisierung von Lead-Routing-Workflows, wodurch der manuelle Dateneingabeaufwand um <strong>~70 %</strong> reduziert wurde.</li><li>Aufrechterhaltung von <strong>95 %+ Testabdeckung</strong> in einer Django/Celery-Codebasis mit pytest; API-Dokumentation, die die Einarbeitung von 2 Wochen auf 3 Tage verkürzte.</li><li>Unterstützung der Engineering-Leitung durch die Moderation wöchentlicher Code-Reviews und die Abstimmung technischer Entscheidungen mit Produkt- und Geschäftszielen.</li>',
+        'exp.j2.meta': '<span class="chip">📍 Algerien</span><span class="chip">Aug 2023 – Apr 2026</span><span class="chip">Vollzeit</span>',
+        'exp.j2.bullets': '<li>Architektur und Aufbau eines <strong>Finanzverwaltungssystems</strong> von Grund auf (Django, PostgreSQL, Celery, Redis), das einen veralteten Tabellenprozess ersetzte und <strong>über 10.000 monatliche Transaktionen</strong> mit vollständigen Audit-Trails verarbeitet.</li><li>Automatisierung von Deployment-, Benutzerverwaltungs- und Backup-Pipelines mit Python- und Bash-Skripten, wodurch ca. 8 Stunden/Woche an operativem Aufwand eingespart wurden.</li><li>Optimierung kritischer PostgreSQL-/MySQL-Abfragen, wodurch die Berichtserstellung von ~45 s auf unter 5 s reduziert wurde – eine <strong>9×-Verbesserung</strong>.</li><li>Erstellung umfassender pytest-Testsuiten und technischer Dokumentation, die abteilungsweit standardisiert wurden.</li><li>Implementierung von CI/CD-Pipelines mit Git und Bash-Skripten zur Optimierung des Deployments und Reduzierung des Release-Risikos.</li>',
 
-        'exp.j3.role': 'Computer-Ingenieur – Backend',
-        'exp.j3.meta': '<span class="chip">📍 Algerien</span><span class="chip">Nov 2022 – Apr 2026</span><span class="chip">Vollzeit</span>',
-        'exp.j3.bullets': '<li>Architektur eines <strong>Finanzverwaltungssystems</strong> von Grund auf (Django, PostgreSQL, Celery, Redis), das <strong>über 10.000 monatliche Transaktionen</strong> mit vollständigen Audit-Trails verarbeitet.</li><li>Automatisierung von Deployment-, Benutzerverwaltungs- und Backup-Pipelines, wodurch ca. 8 Stunden/Woche an operativem Aufwand eingespart wurden.</li><li>Optimierung kritischer PostgreSQL-/MySQL-Abfragen, wodurch die Berichtserstellung von ~45 s auf unter 5 s reduziert wurde – eine <strong>9×-Verbesserung</strong>.</li><li>Erstellung von pytest-Testsuiten und technischer Dokumentation, die als teamweiter Standard übernommen wurden; Aufbau von CI/CD-Pipelines zur Reduzierung des Release-Risikos.</li>',
-
-        'exp.j4.role': 'Python-Entwickler',
-        'exp.j4.meta': '<span class="chip">📍 Frankreich (Remote)</span><span class="chip">Okt 2023 – Feb 2024</span><span class="chip">Teilzeit</span>',
-        'exp.j4.bullets': '<li>Integration von <strong>OAuth2 Social Login</strong> (Apple, Google, Facebook) in ein Django-REST-Framework-Backend, was zu einer <strong>20 %+</strong> höheren Onboarding-Konversion beitrug.</li><li>Entwurf und Deployment sicherer REST-API-Endpunkte für eine Fintech-Mobile-App mit vollständiger Eingabevalidierung und <strong>JWT-Authentifizierung</strong>.</li>',
-
-        'exp.j5.role': 'Backend Engineer & Integrations-Lead',
-        'exp.j5.meta': '<span class="chip">📍 San Jose, USA (Remote)</span><span class="chip">Dez 2020 – Aug 2023</span><span class="chip">Vollzeit</span>',
-        'exp.j5.bullets': '<li>Aufbau und Wartung Dockerisierter REST-APIs mit Integrationen zu HubSpot, Zapier, Pipedrive, Zoom und Meta – Verarbeitung von <strong>über 50.000 API-Aufrufen/Tag</strong> bei Spitzenlast mit CloudWatch-Monitoring.</li><li>Aufbau von Echtzeit-Messaging-Backends mit Redis-Queues und Microservices, mit einer Nachrichtenlatenz von <strong>&lt;200 ms</strong> für Enterprise-Kunden.</li><li>Refactoring stark frequentierter Integrations-Endpunkte, wodurch die API-Antwortlatenz um <strong>~35 %</strong> gesenkt wurde.</li><li>Deployment und Wartung von Diensten auf AWS EC2, RDS, S3 und CloudWatch.</li>',
-
-        'exp.j6.role': 'Python-Entwickler',
-        'exp.j6.meta': '<span class="chip">📍 San Jose, USA (Remote)</span><span class="chip">Feb 2021 – Dez 2021</span><span class="chip">Teilzeit</span>',
-        'exp.j6.bullets': '<li>Aufbau automatisierter Anruf-Transkriptions-Pipelines auf AWS EC2 (Python, Flask, S3), Verarbeitung von <strong>5.000 Anrufen/Monat</strong> mit sicherer Audiospeicherung.</li><li>Erstellung eines Admin-Dashboards und Google-Data-Studio-Berichten, wodurch der manuelle Reporting-Aufwand von 4 Stunden/Woche auf unter 30 Minuten reduziert wurde.</li>',
+        'exp.j3.role': 'Backend Engineer',
+        'exp.j3.meta': '<span class="chip">📍 San Jose, USA (Remote)</span><span class="chip">Dez 2020 – Aug 2023</span><span class="chip">Vollzeit</span>',
+        'exp.j3.bullets': '<li>Entwicklung und Wartung Dockerisierter REST-APIs mit Integrationen zu HubSpot, Zapier, Pipedrive, Zoom und Meta – Verarbeitung von <strong>über 50.000 API-Aufrufen/Tag</strong> bei Spitzenlast mit Echtzeit-CloudWatch-Monitoring.</li><li>Aufbau von Echtzeit-Messaging-Backends mit Redis-Queues und Dockerisierten Microservices, mit einer Nachrichtenlatenz von <strong>&lt;200 ms</strong> für Enterprise-Kunden.</li><li>Refactoring stark frequentierter Drittanbieter-Integrations-Endpunkte, wodurch die durchschnittliche API-Antwortlatenz um <strong>~35 %</strong> gesenkt wurde.</li><li>Implementierung von <strong>OAuth2 Social Login</strong> (Google, Apple, Facebook), was die Onboarding-Konversion direkt verbesserte.</li><li>Deployment und Wartung von Diensten auf AWS EC2 und RDS; Nutzung von S3 zur Dateispeicherung und CloudWatch für Alerting.</li>',
 
         // Projects
         'proj.eyebrow': 'Projekte',
@@ -113,7 +103,7 @@ const translations = {
         'contact.email': 'E-Mail',
 
         // Footer
-        'footer.text': '© 2026 Abderrahmane Chabira · Senior Backend Engineer · Augsburg, Deutschland'
+        'footer.text': '© 2026 Abderrahmane Chabira · Backend Engineer · Augsburg, Deutschland'
     }
 };
 
@@ -175,6 +165,30 @@ if (toggleBtn) {
         applyTheme(nowDark ? 'dark' : 'light');
         localStorage.setItem('theme', nowDark ? 'dark' : 'light');
     });
+}
+
+// ===== CV download language dropdown =====
+const cvDropdown = document.getElementById('cvDropdown');
+const cvToggle = document.getElementById('cvToggle');
+if (cvDropdown && cvToggle) {
+    const closeCv = () => {
+        cvDropdown.classList.remove('open');
+        cvToggle.setAttribute('aria-expanded', 'false');
+    };
+    cvToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = cvDropdown.classList.toggle('open');
+        cvToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', (e) => {
+        if (!cvDropdown.contains(e.target)) closeCv();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeCv();
+    });
+    cvDropdown.querySelectorAll('.cv-menu a').forEach(a =>
+        a.addEventListener('click', closeCv)
+    );
 }
 
 // ===== Mobile nav toggle =====
