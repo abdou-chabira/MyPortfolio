@@ -14,8 +14,8 @@ const translations = {
 
         // Hero
         'hero.badge': 'Offen für Festanstellungen in Deutschland',
-        'hero.role': 'Backend Engineer — Python · Django · Cloud',
-        'hero.desc': 'Ich entwickle skalierbare Webanwendungen, RESTful-APIs und cloud-native verteilte Systeme in Python — Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS. Über 5 Jahre in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbarer Wirkung: 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
+        'hero.role': 'Backend Engineer & KI-Integration — Python · Django · Cloud',
+        'hero.desc': 'Ich entwickle skalierbare Webanwendungen, RESTful-APIs und cloud-native verteilte Systeme in Python — Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS — und integriere KI in Produkte mit LLM-APIs (OpenAI, Claude) und agentischen Workflows. Über 5 Jahre in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbarer Wirkung: 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
         'hero.cv': '⬇ Lebenslauf herunterladen',
         'hero.cvEn': 'Englisch',
         'hero.cvDe': 'Deutsch',
@@ -29,9 +29,9 @@ const translations = {
 
         // About
         'about.eyebrow': 'Über mich',
-        'about.title': 'Backend-Entwicklung mit messbarer Wirkung',
-        'about.p1': 'Ich bin Backend Engineer mit über 5 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, RESTful-APIs und cloud-nativer verteilter Systeme in Python. Mein Kern-Stack umfasst Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS.',
-        'about.p2': 'Ich habe komplette API-Architekturen von Anfang bis Ende verantwortet, CI/CD-Pipelines aufgebaut und kontinuierlich messbare Wirkung erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion der durchschnittlichen API-Latenz um 35 % und der Bewältigung von über 50.000 Anfragen/Tag. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
+        'about.title': 'Backend-Entwicklung & KI-Integration mit messbarer Wirkung',
+        'about.p1': 'Ich bin Backend Engineer und KI-Integrationsspezialist mit über 5 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, RESTful-APIs und cloud-nativer verteilter Systeme in Python. Mein Kern-Stack umfasst Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS.',
+        'about.p2': 'Ich habe komplette API-Architekturen von Anfang bis Ende verantwortet, CI/CD-Pipelines aufgebaut und kontinuierlich messbare Wirkung erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion der durchschnittlichen API-Latenz um 35 % und der Bewältigung von über 50.000 Anfragen/Tag. In jüngster Zeit habe ich mich auf KI-Integration fokussiert – den Aufbau agentischer Workflows, LLM-API-Integrationen (OpenAI, Claude) und Web-Scraping-Pipelines, die Geschäftsprozesse durchgängig automatisieren. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
         'about.p3': 'Ich lebe in Augsburg, Deutschland, besitze einen gültigen deutschen Aufenthaltstitel mit voller Arbeitserlaubnis und bin offen für einen Umzug innerhalb Deutschlands.',
         'about.h1title': 'API- & Systemarchitektur',
         'about.h1desc': 'Entwurf von REST-/GraphQL-APIs und verteilten, microservice-basierten Systemen von Anfang bis Ende.',
@@ -39,12 +39,15 @@ const translations = {
         'about.h2desc': 'Asynchrone Verarbeitung mit Celery/Redis, Query-Optimierung und Latenzreduktion im großen Maßstab.',
         'about.h3title': 'Qualität & Auslieferung',
         'about.h3desc': 'TDD, CI/CD, Code-Reviews und Dokumentation, die als teamweiter Standard übernommen wurden.',
+        'about.h4title': 'KI-Integration',
+        'about.h4desc': 'LLM-API-Integration (OpenAI, Claude), Prompt Engineering, agentische Workflows und Web-Scraping-Pipelines, die Geschäftsprozesse automatisieren.',
 
         // Skills
         'skills.eyebrow': 'Kenntnisse',
         'skills.title': 'Technischer Werkzeugkasten',
         'skills.lead': 'Die Sprachen, Frameworks und Plattformen, mit denen ich zuverlässige Backend-Systeme baue.',
         'skills.c1': '<span class="ic">🐍</span> Sprachen & Frameworks',
+        'skills.cai': '<span class="ic">🤖</span> KI & Agentische Systeme',
         'skills.c2': '<span class="ic">🗄️</span> Datenbanken',
         'skills.c3': '<span class="ic">☁️</span> Cloud & DevOps',
         'skills.c4': '<span class="ic">🔌</span> APIs & Integrationen',
@@ -58,7 +61,7 @@ const translations = {
 
         'exp.j1.role': 'Softwareentwickler (Python/Django)',
         'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit (Minijob)</span>',
-        'exp.j1.bullets': '<li>Entwicklung moderner Webanwendungen und Backend-Systeme mit <strong>Python, Django</strong> und <strong>PostgreSQL</strong>-Datenbanken.</li><li>Entwurf und Integration von RESTful-APIs und relationalen Datenbankschemata für skalierbare Geschäftsanwendungen.</li><li>Entwicklung und Bereitstellung KI-gestützter Automatisierungslösungen mit <strong>LLM-Integrationen</strong> zur Optimierung von Geschäftsprozessen.</li><li>Enge Zusammenarbeit mit dem Team bei Code-Reviews und gemeinsamen Coding-Standards zur Sicherung gleichbleibender Qualität.</li>',
+        'exp.j1.bullets': '<li>Aufbau einer <strong>KI-gestützten Onboarding-Pipeline für Anbieter</strong> mit <strong>Playwright</strong> und der <strong>Claude API</strong> – vollständige Automatisierung von Web-Scraping, Inhaltsextraktion und Account-Bereitstellung.</li><li>Entwicklung und Deployment einer <strong>B2B-Publishing-Plattform</strong> von Grund auf bis in die <strong>AWS</strong>-Produktion – inklusive Zahlungsabwicklung, Vendor-Portalen und Hintergrundverarbeitung.</li><li>Erfahren in agentischen KI-Systemen, <strong>LLM-API-Integration (OpenAI, Claude)</strong>, Web-Scraping-Pipelines und agentischen Workflows zur Automatisierung von Geschäftsprozessen.</li>',
 
         'exp.j2.role': 'Backend Engineer',
         'exp.j2.meta': '<span class="chip">📍 Algerien</span><span class="chip">Aug 2023 – Apr 2026</span><span class="chip">Vollzeit</span>',
