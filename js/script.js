@@ -32,7 +32,7 @@ const translations = {
         'about.title': 'Backend-Entwicklung & KI-Integration mit messbarer Wirkung',
         'about.p1': 'Ich bin Backend Engineer und KI-Integrationsspezialist mit über 6 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, RESTful-APIs und cloud-nativer verteilter Systeme in Python. Mein Kern-Stack umfasst Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS.',
         'about.p2': 'Ich habe komplette API-Architekturen von Anfang bis Ende verantwortet, CI/CD-Pipelines aufgebaut und kontinuierlich messbare Wirkung erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion der durchschnittlichen API-Latenz um 35 % und der Bewältigung von über 50.000 Anfragen/Tag. In jüngster Zeit habe ich mich auf KI-Integration fokussiert – den Aufbau agentischer Workflows, LLM-API-Integrationen (OpenAI, Claude) und Web-Scraping-Pipelines, die Geschäftsprozesse durchgängig automatisieren. Ich arbeite testgetrieben (TDD, pytest, 95 %+ Abdeckung) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
-        'about.p3': 'Ich lebe in Augsburg, Deutschland, mit einer deutschen Chancenkarte (Opportunity Card) – die bei Anstellung unkompliziert in einen Arbeitstitel / eine EU Blue Card umgewandelt wird – und bin offen für einen Umzug innerhalb Deutschlands.',
+        'about.p3': 'Ich lebe in Augsburg, Deutschland, mit einer gültigen deutschen Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – und bin offen für einen Umzug innerhalb Deutschlands.',
         'about.h1title': 'API- & Systemarchitektur',
         'about.h1desc': 'Entwurf von REST-/GraphQL-APIs und verteilten, microservice-basierten Systemen von Anfang bis Ende.',
         'about.h2title': 'Performance & Skalierung',
@@ -103,7 +103,7 @@ const translations = {
         // Contact
         'contact.eyebrow': 'Kontakt',
         'contact.title': 'Lassen Sie uns etwas Zuverlässiges bauen',
-        'contact.lead': 'Ich bin offen für Festanstellungen als Backend-Entwickler in ganz Deutschland. Ich besitze eine deutsche Chancenkarte (Opportunity Card), die bei Anstellung unkompliziert in einen Arbeitstitel / eine EU Blue Card umgewandelt wird – melden Sie sich gerne.',
+        'contact.lead': 'Ich bin offen für Festanstellungen als Backend-Entwickler in ganz Deutschland. Ich besitze eine gültige deutsche Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – melden Sie sich gerne.',
         'contact.email': 'E-Mail',
 
         // Footer
