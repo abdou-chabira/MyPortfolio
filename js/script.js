@@ -59,7 +59,7 @@ const translations = {
         'exp.lead': 'Über 6 Jahre in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
 
         'exp.j1.role': 'Softwareentwickler (Python/Django)',
-        'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit (Minijob)</span>',
+        'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit </span>',
         'exp.j1.bullets': '<li>Aufbau einer <strong>KI-gestützten Onboarding-Pipeline für Anbieter</strong> mit <strong>Playwright</strong> und der <strong>Claude API</strong> – vollständige Automatisierung von Web-Scraping, Inhaltsextraktion und Account-Bereitstellung.</li><li>Aufbau einer <strong>B2B-Publishing-Plattform</strong> von Grund auf – Zahlungsabwicklung, Vendor-Portale und Hintergrundverarbeitung – mit <strong>AWS</strong>-Produktions-Deployment in Vorbereitung.</li><li>Erfahren in agentischen KI-Systemen, <strong>LLM-API-Integration (OpenAI, Claude)</strong>, Web-Scraping-Pipelines und agentischen Workflows zur Automatisierung von Geschäftsprozessen.</li>',
 
         'exp.j2.role': 'Backend Engineer',
