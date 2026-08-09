@@ -58,7 +58,7 @@ const translations = {
         'exp.title': 'Beruflicher Werdegang',
         'exp.lead': 'Über 6 Jahre in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
 
-        'exp.j1.role': 'Softwareentwickler (Python/Django)',
+        'exp.j1.role': 'Softwareentwickler',
         'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit </span>',
         'exp.j1.bullets': '<li><strong>KI-/LLM-Engineering:</strong> Aufbau einer Python-Pipeline mit der <strong>Anthropic Claude API</strong>, um Anbieter automatisch aus gescrapten Website-Inhalten zu profilieren und strukturierte Daten in sauberes JSON zu extrahieren – mit Prompt-Design, Validierung sowie Retry-/Fehlerbehandlung.</li><li><strong>Backend &amp; asynchrone Verarbeitung:</strong> Entwicklung eines produktiven <strong>Django</strong>-Backends mit eigenen Modellen und Geschäftslogik, das mit <strong>Celery</strong> und <strong>Redis</strong> die KI-Anreicherung im Hintergrund ausführt, ohne Web-Requests zu verlangsamen.</li><li><strong>Full-Stack-Entwicklung:</strong> Vollständige Entwicklung und Auslieferung einer produktiven Hochzeitsmagazin-Plattform – inklusive eines token-basierten Styling-Systems, das Design-Änderungen in Echtzeit über alle Anbieter hinweg ausspielt.</li>',
 
