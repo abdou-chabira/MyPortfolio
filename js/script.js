@@ -14,39 +14,39 @@ const translations = {
 
         // Hero
         'hero.badge': 'Offen für Festanstellungen in Deutschland',
-        'hero.role': 'Backend Engineer & KI-Integration — Python · Django · Cloud',
-        'hero.desc': 'Ich entwickle skalierbare Webanwendungen, RESTful-APIs und cloud-native verteilte Systeme in Python — Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS — und integriere KI in Produkte mit LLM-APIs (OpenAI, Claude) und agentischen Workflows. Über 6 Jahre in internationalen SaaS-Startups und Unternehmensumgebungen, mit nachweisbarer Wirkung: 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
+        'hero.role': 'AI Engineer — Python · LLM-Anwendungen & Automatisierung',
+        'hero.desc': 'Ich entwickle LLM-basierte Anwendungen, KI-Automatisierungspipelines und agentische Workflows in Python — mit den APIs von OpenAI und Anthropic Claude, Prompt Engineering, Web Scraping und strukturierter Datenextraktion, gestützt auf Django, Celery, Redis, Docker und AWS. Über 6 Jahre Software-Engineering-Erfahrung, angewandt auf KI, mit nachweisbarer Wirkung: LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
         'hero.cv': '⬇ Lebenslauf herunterladen',
         'hero.cvEn': 'Englisch',
         'hero.cvDe': 'Deutsch',
         'hero.contact': 'Kontakt aufnehmen',
 
         // Stats
-        'stat.years': 'Jahre Erfahrung',
+        'stat.years': 'Jahre Engineering-Erfahrung',
+        'stat.summaries': 'LLM-Unternehmenszusammenfassungen',
         'stat.calls': 'API-Aufrufe/Tag bewältigt',
-        'stat.query': 'schnellere Abfragen',
 
         // About
         'about.eyebrow': 'Über mich',
-        'about.title': 'Backend-Entwicklung & KI-Integration mit messbarer Wirkung',
-        'about.p1': 'Ich bin Backend Engineer und KI-Integrationsspezialist mit über 6 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, RESTful-APIs und cloud-nativer verteilter Systeme in Python. Mein Kern-Stack umfasst Django, FastAPI, PostgreSQL, Celery, Redis, Docker und AWS.',
-        'about.p2': 'Ich habe komplette API-Architekturen von Anfang bis Ende verantwortet, CI/CD-Pipelines aufgebaut und kontinuierlich messbare Wirkung erzielt – von einer 9× schnelleren Berichtserstellung bis zur Reduktion der durchschnittlichen API-Latenz um 35 % und der Bewältigung von über 50.000 Anfragen/Tag. In jüngster Zeit habe ich mich auf KI-Integration fokussiert – den Aufbau agentischer Workflows, LLM-API-Integrationen (OpenAI, Claude) und Web-Scraping-Pipelines, die Geschäftsprozesse durchgängig automatisieren. Ich arbeite testgetrieben (TDD, pytest) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
+        'about.title': 'KI-Engineering auf solidem Software-Fundament',
+        'about.p1': 'Ich bin ein KI-orientierter Python-Engineer und entwickle LLM-basierte Anwendungen, KI-Automatisierungspipelines und agentische Workflows. Ich habe praktische Erfahrung mit den APIs von OpenAI und Anthropic Claude, Prompt Engineering, Web Scraping, strukturierter Datenextraktion und asynchroner Verarbeitung – auf einem soliden Fundament aus APIs, Datenbanken, Testing und Cloud-Infrastruktur.',
+        'about.p2': 'Ich habe KI-gestützte Anwendungen von Grund auf mit Python, Django, Celery, Redis, Docker und AWS entwickelt und bringe über 6 Jahre Software-Engineering-Erfahrung mit nachweisbarer Wirkung mit – LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen. Ich arbeite testgetrieben (TDD, pytest) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
         'about.p3': 'Ich lebe in Augsburg, Deutschland, mit einer gültigen deutschen Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – und bin offen für einen Umzug innerhalb Deutschlands.',
-        'about.h1title': 'API- & Systemarchitektur',
-        'about.h1desc': 'Entwurf von REST-/GraphQL-APIs und verteilten, microservice-basierten Systemen von Anfang bis Ende.',
-        'about.h2title': 'Performance & Skalierung',
-        'about.h2desc': 'Asynchrone Verarbeitung mit Celery/Redis, Query-Optimierung und Latenzreduktion im großen Maßstab.',
-        'about.h3title': 'Qualität & Auslieferung',
-        'about.h3desc': 'TDD, CI/CD, Code-Reviews und Dokumentation, die als teamweiter Standard übernommen wurden.',
-        'about.h4title': 'KI-Integration',
-        'about.h4desc': 'LLM-API-Integration (OpenAI, Claude), Prompt Engineering, agentische Workflows und Web-Scraping-Pipelines, die Geschäftsprozesse automatisieren.',
+        'about.h1title': 'LLM-Anwendungen',
+        'about.h1desc': 'Entwicklung LLM-basierter Anwendungen mit den APIs von OpenAI & Anthropic Claude, Prompt Engineering und strukturierter Datenextraktion.',
+        'about.h2title': 'KI-Automatisierung & Agenten',
+        'about.h2desc': 'Agentische Workflows und Web-Scraping-Pipelines, die unstrukturierte Daten in nutzbare, strukturierte Ergebnisse verwandeln.',
+        'about.h3title': 'Backend & asynchrone Verarbeitung',
+        'about.h3desc': 'Django-REST-APIs mit Celery/Redis-Verarbeitung, um KI-Workloads skalierbar außerhalb des Request-Pfads auszuführen.',
+        'about.h4title': 'Produktion & Qualität',
+        'about.h4desc': 'AWS, Docker, CI/CD und TDD/pytest – Python-Anwendungen von der Entwicklung über das Deployment bis zum Betrieb.',
 
         // Skills
         'skills.eyebrow': 'Kenntnisse',
         'skills.title': 'Technischer Werkzeugkasten',
-        'skills.lead': 'Die Sprachen, Frameworks und Plattformen, mit denen ich zuverlässige Backend-Systeme baue.',
+        'skills.lead': 'Die KI-Werkzeuge, Sprachen und Plattformen, mit denen ich LLM-basierte Anwendungen und Automatisierung baue.',
         'skills.c1': '<span class="ic">🐍</span> Sprachen & Frameworks',
-        'skills.cai': '<span class="ic">🤖</span> KI & Agentische Systeme',
+        'skills.cai': '<span class="ic">🤖</span> KI & LLM Engineering',
         'skills.c2': '<span class="ic">🗄️</span> Datenbanken',
         'skills.c3': '<span class="ic">☁️</span> Cloud & DevOps',
         'skills.c4': '<span class="ic">🔌</span> APIs & Integrationen',
@@ -58,9 +58,9 @@ const translations = {
         'exp.title': 'Beruflicher Werdegang',
         'exp.lead': 'Über 6 Jahre in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
 
-        'exp.j1.role': 'Softwareentwickler',
+        'exp.j1.role': 'Softwareentwickler — KI & Python',
         'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit </span>',
-        'exp.j1.bullets': '<li><strong>KI-/LLM-Engineering:</strong> Aufbau einer Python-Pipeline mit der <strong>Anthropic Claude API</strong>, um Anbieter automatisch aus gescrapten Website-Inhalten zu profilieren und strukturierte Daten in sauberes JSON zu extrahieren – mit Prompt-Design, Validierung sowie Retry-/Fehlerbehandlung.</li><li><strong>Backend &amp; asynchrone Verarbeitung:</strong> Entwicklung eines produktiven <strong>Django</strong>-Backends mit eigenen Modellen und Geschäftslogik, das mit <strong>Celery</strong> und <strong>Redis</strong> die KI-Anreicherung im Hintergrund ausführt, ohne Web-Requests zu verlangsamen.</li><li><strong>Full-Stack-Entwicklung:</strong> Vollständige Entwicklung und Auslieferung einer produktiven Hochzeitsmagazin-Plattform – inklusive eines token-basierten Styling-Systems, das Design-Änderungen in Echtzeit über alle Anbieter hinweg ausspielt.</li>',
+        'exp.j1.bullets': '<li>Aufbau einer <strong>KI-gestützten Onboarding-Pipeline für Unternehmen</strong> mit Python, <strong>Playwright</strong> und der <strong>Anthropic Claude API</strong> – mit Automatisierung von Web Scraping, Inhaltsextraktion, Klassifizierung und Account-Provisionierung auf Basis unstrukturierter Unternehmenswebsites.</li><li>Entwurf von Prompts und <strong>strukturierten JSON-Ausgaben</strong>, um externe Unternehmensinformationen in nutzbare Unternehmensprofile zu überführen – inklusive Validierung sowie Retry-/Fehlerbehandlung.</li><li>Entwicklung asynchroner Verarbeitungs-Workflows mit <strong>Celery</strong> und <strong>Redis</strong> für KI-Anreicherungsaufgaben, die lang laufende Arbeit vom Request-Pfad entkoppeln.</li><li>Entwicklung einer <strong>B2B-Publishing-Plattform</strong> mit Zahlungsabwicklung, Anbieterportalen und Hintergrundverarbeitung – tätig in Backend-Entwicklung, KI-Integration, Deployment und Cloud-Infrastruktur.</li>',
 
         'exp.j2.role': 'Backend Engineer',
         'exp.j2.meta': '<span class="chip">📍 Algerien</span><span class="chip">Aug 2023 – Apr 2026</span><span class="chip">Vollzeit</span>',
@@ -73,11 +73,14 @@ const translations = {
         // Projects
         'proj.eyebrow': 'Projekte',
         'proj.title': 'Ausgewählte Arbeiten',
-        'proj.lead': 'Praxisprojekte mit Fokus auf Backend-Architektur, asynchrone Verarbeitung und KI-Integration.',
+        'proj.lead': 'Praxisprojekte mit Fokus auf LLM-Anwendungen, KI-Automatisierung und asynchrone Verarbeitungspipelines.',
         'proj.link': 'GitHub-Repository ↗',
         'proj.p1.tag': 'KI-Deal-Intelligence & Wettbewerbs-Tracker für Vertriebsteams',
         'proj.p1.desc': 'End-to-End-Backend für automatisierte Unternehmensrecherche und Outreach:',
         'proj.p1.bullets': '<li>URL-Erfassung + automatisierte Web-Scraping-Pipeline mit LLM-gestützten Unternehmenszusammenfassungen in unter 10 Sekunden</li><li>Echtzeit-Engines für Wettbewerbererkennung, Buyer-Readiness-Scoring und geplante <code>daily_delta</code>- / <code>weekly_delta</code>-Neuberechnungen (Celery + Redis)</li><li>Personalisierter Multi-Channel-Outreach (E-Mail + LinkedIn), zugeschnitten auf Executive-Personas mittels LLM-Prompt-Engineering</li>',
+        'proj.p4.tag': 'KI-Pipeline zur Audioverarbeitung — Transkription & Sentiment',
+        'proj.p4.desc': 'Eine webhook-gesteuerte, asynchrone Audioverarbeitungs-Pipeline, die Anrufaufzeichnungen in Transkripte und Sentiment-Signale überführt:',
+        'proj.p4.bullets': '<li>Verarbeitung von ca. 5.000 Anrufen/Monat, ohne die Hauptanwendung zu blockieren – mit Python, Flask, Celery und AWS EC2/S3</li><li>Speech-to-Text-Transkription mit TensorFlow und anschließender Sentimentanalyse der Audiospuren von Anrufer und Angerufenem</li><li>Asynchrone Task-Verarbeitung mit Retries zur Bewältigung schwankender Audioverarbeitungslasten</li>',
         'proj.p2.tag': 'Asynchrone B2B-Datenanreicherungs-Plattform',
         'proj.p2.desc': 'Eine skalierbare, asynchrone Lead-Enrichment-Plattform mit Django und Celery, die reale SaaS-Enrichment-Workflows simuliert. Demonstriert verteilte Task-Verarbeitung, Idempotenz-Schutz, Rate-Limiting, Monitoring und produktionsreife Sicherheit.',
         'proj.p3.tag': 'Asynchrone SaaS-Integrationsplattform',
@@ -102,11 +105,11 @@ const translations = {
         // Contact
         'contact.eyebrow': 'Kontakt',
         'contact.title': 'Lassen Sie uns etwas Zuverlässiges bauen',
-        'contact.lead': 'Ich bin offen für Festanstellungen als Backend-Entwickler in ganz Deutschland. Ich besitze eine gültige deutsche Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – melden Sie sich gerne.',
+        'contact.lead': 'Ich bin offen für Positionen als AI Engineer, AI Developer und Python/LLM Engineer in ganz Deutschland. Ich besitze eine gültige deutsche Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – melden Sie sich gerne.',
         'contact.email': 'E-Mail',
 
         // Footer
-        'footer.text': '© 2026 Abderrahmane Chabira · Backend Engineer · Augsburg, Deutschland'
+        'footer.text': '© 2026 Abderrahmane Chabira · AI Engineer · Augsburg, Deutschland'
     }
 };
 
