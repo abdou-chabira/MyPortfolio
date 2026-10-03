@@ -15,14 +15,14 @@ const translations = {
         // Hero
         'hero.badge': 'Offen für Festanstellungen in Deutschland',
         'hero.role': 'AI Engineer — Python · LLM-Anwendungen & Automatisierung',
-        'hero.desc': 'Ich entwickle LLM-basierte Anwendungen, KI-Automatisierungspipelines und agentische Workflows in Python — mit den APIs von OpenAI und Anthropic Claude, Prompt Engineering, Web Scraping und strukturierter Datenextraktion, gestützt auf Django, Celery, Redis, Docker und AWS. Über 6 Jahre Software-Engineering-Erfahrung, angewandt auf KI, mit nachweisbarer Wirkung: LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
+        'hero.desc': 'Ich entwickle LLM-basierte Anwendungen, KI-Automatisierungspipelines und agentische Workflows in Python — mit den APIs von OpenAI und Anthropic Claude, Prompt Engineering, Web Scraping und strukturierter Datenextraktion, gestützt auf Django, Celery, Redis, Docker und AWS – mit nachweisbarer Wirkung: LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte und Systeme, die über 50.000 Anfragen/Tag bewältigen.',
         'hero.cv': '⬇ Lebenslauf herunterladen',
         'hero.cvEn': 'Englisch',
         'hero.cvDe': 'Deutsch',
         'hero.contact': 'Kontakt aufnehmen',
 
         // Stats
-        'stat.years': 'Jahre Engineering-Erfahrung',
+        'stat.reporting': 'schnellere Berichte',
         'stat.summaries': 'LLM-Unternehmenszusammenfassungen',
         'stat.calls': 'API-Aufrufe/Tag bewältigt',
 
@@ -30,7 +30,7 @@ const translations = {
         'about.eyebrow': 'Über mich',
         'about.title': 'KI-Engineering auf solidem Software-Fundament',
         'about.p1': 'Ich bin ein KI-orientierter Python-Engineer und entwickle LLM-basierte Anwendungen, KI-Automatisierungspipelines und agentische Workflows. Ich habe praktische Erfahrung mit den APIs von OpenAI und Anthropic Claude, Prompt Engineering, Web Scraping, strukturierter Datenextraktion und asynchroner Verarbeitung – auf einem soliden Fundament aus APIs, Datenbanken, Testing und Cloud-Infrastruktur.',
-        'about.p2': 'Ich habe KI-gestützte Anwendungen von Grund auf mit Python, Django, Celery, Redis, Docker und AWS entwickelt und bringe über 6 Jahre Software-Engineering-Erfahrung mit nachweisbarer Wirkung mit – LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen. Ich arbeite testgetrieben (TDD, pytest) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
+        'about.p2': 'Ich habe KI-gestützte Anwendungen von Grund auf mit Python, Django, Celery, Redis, Docker und AWS entwickelt – mit nachweisbarer Wirkung: LLM-Unternehmenszusammenfassungen in unter 10 Sekunden, 9× schnellere Berichte, 35 % geringere API-Latenz und Systeme, die über 50.000 Anfragen/Tag bewältigen. Ich arbeite testgetrieben (TDD, pytest) und fühle mich in agilen, cross-funktionalen Remote-Teams wohl.',
         'about.p3': 'Ich lebe in Augsburg, Deutschland, mit einer gültigen deutschen Arbeitserlaubnis – sofort einsatzbereit, ohne Visa-Sponsoring – und bin offen für einen Umzug innerhalb Deutschlands.',
         'about.h1title': 'LLM-Anwendungen',
         'about.h1desc': 'Entwicklung LLM-basierter Anwendungen mit den APIs von OpenAI & Anthropic Claude, Prompt Engineering und strukturierter Datenextraktion.',
@@ -56,7 +56,7 @@ const translations = {
         // Experience
         'exp.eyebrow': 'Erfahrung',
         'exp.title': 'Beruflicher Werdegang',
-        'exp.lead': 'Über 6 Jahre in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
+        'exp.lead': 'Erfahrung in internationalen SaaS-Startups und Unternehmen – remote und vor Ort.',
 
         'exp.j1.role': 'Softwareentwickler — KI & Python',
         'exp.j1.meta': '<span class="chip">📍 Deutschland</span><span class="chip">Jun 2026 – Heute</span><span class="chip">Teilzeit </span>',
